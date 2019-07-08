@@ -77,8 +77,7 @@ ADDITIONAL_DEPENDENCIES:=
 
 OUTPUT_FILE_DEP:= ./makedep.mk
 
-LIB_DEP+=  \
-C:/Users/Rafael\ Dias/Documents/Atmel\ Studio/7.0/ss_board/ss_board/Debug/libss_board.a
+LIB_DEP+= 
 
 LINKER_SCRIPT_DEP+=  \
 ../Device_Startup/samd21g18a_flash.ld \
@@ -89,21 +88,21 @@ LINKER_SCRIPT_DEP+=  \
 Device_Startup/startup_samd21.o: ../Device_Startup/startup_samd21.c
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 6.3.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAMD21G18A__ -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\ARM\CMSIS\5.4.0\CMSIS\Core\Include" -I"../../ss_board/Config" -I"../../ss_board" -I"../../ss_board/examples" -I"../../ss_board/hal/include" -I"../../ss_board/hal/utils/include" -I"../../ss_board/hpl/core" -I"../../ss_board/hpl/dmac" -I"../../ss_board/hpl/dsu" -I"../../ss_board/hpl/gclk" -I"../../ss_board/hpl/pac" -I"../../ss_board/hpl/pm" -I"../../ss_board/hpl/port" -I"../../ss_board/hpl/sercom" -I"../../ss_board/hpl/sysctrl" -I"../../ss_board/hpl/wdt" -I"../../ss_board/hri" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\SAMD21_DFP\1.3.331\samd21a\include"  -O1 -ffunction-sections -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAMD21G18A__ -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\ARM\CMSIS\5.4.0\CMSIS\Core\Include" -I"../../ss_board/Config" -I"../../ss_board" -I"../../ss_board/examples" -I"../../ss_board/hal/include" -I"../../ss_board/hal/utils/include" -I"../../ss_board/hpl/core" -I"../../ss_board/hpl/dmac" -I"../../ss_board/hpl/dsu" -I"../../ss_board/hpl/gclk" -I"../../ss_board/hpl/pac" -I"../../ss_board/hpl/pm" -I"../../ss_board/hpl/port" -I"../../ss_board/hpl/sercom" -I"../../ss_board/hpl/sysctrl" -I"../../ss_board/hpl/wdt" -I"../../ss_board/hri" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.304\samd21a\include"  -O1 -ffunction-sections -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 Device_Startup/system_samd21.o: ../Device_Startup/system_samd21.c
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 6.3.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAMD21G18A__ -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\ARM\CMSIS\5.4.0\CMSIS\Core\Include" -I"../../ss_board/Config" -I"../../ss_board" -I"../../ss_board/examples" -I"../../ss_board/hal/include" -I"../../ss_board/hal/utils/include" -I"../../ss_board/hpl/core" -I"../../ss_board/hpl/dmac" -I"../../ss_board/hpl/dsu" -I"../../ss_board/hpl/gclk" -I"../../ss_board/hpl/pac" -I"../../ss_board/hpl/pm" -I"../../ss_board/hpl/port" -I"../../ss_board/hpl/sercom" -I"../../ss_board/hpl/sysctrl" -I"../../ss_board/hpl/wdt" -I"../../ss_board/hri" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\SAMD21_DFP\1.3.331\samd21a\include"  -O1 -ffunction-sections -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAMD21G18A__ -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\ARM\CMSIS\5.4.0\CMSIS\Core\Include" -I"../../ss_board/Config" -I"../../ss_board" -I"../../ss_board/examples" -I"../../ss_board/hal/include" -I"../../ss_board/hal/utils/include" -I"../../ss_board/hpl/core" -I"../../ss_board/hpl/dmac" -I"../../ss_board/hpl/dsu" -I"../../ss_board/hpl/gclk" -I"../../ss_board/hpl/pac" -I"../../ss_board/hpl/pm" -I"../../ss_board/hpl/port" -I"../../ss_board/hpl/sercom" -I"../../ss_board/hpl/sysctrl" -I"../../ss_board/hpl/wdt" -I"../../ss_board/hri" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.304\samd21a\include"  -O1 -ffunction-sections -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 ./main.o: .././main.cpp
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 6.3.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -mthumb -D__SAMD21G18A__ -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\ARM\CMSIS\5.4.0\CMSIS\Core\Include" -I"../../ss_board/Config" -I"../../ss_board/examples" -I"../../ss_board" -I"../../ss_board/hal/include" -I"../../ss_board/hal/utils/include" -I"../../ss_board/hpl/core" -I"../../ss_board/hpl/dmac" -I"../../ss_board/hpl/dsu" -I"../../ss_board/hpl/gclk" -I"../../ss_board/hpl/pac" -I"../../ss_board/hpl/pm" -I"../../ss_board/hpl/sercom" -I"../../ss_board/hpl/port" -I"../../ss_board/hpl/sysctrl" -I"../../ss_board/hpl/wdt" -I"../../ss_board/hri" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\SAMD21_DFP\1.3.331\samd21a\include"  -O1 -ffunction-sections -fno-rtti -fno-exceptions -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -std=c++0x -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -mthumb -D__SAMD21G18A__ -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\ARM\CMSIS\5.4.0\CMSIS\Core\Include" -I"../../ss_board/Config" -I"../../ss_board/examples" -I"../../ss_board" -I"../../ss_board/hal/include" -I"../../ss_board/hal/utils/include" -I"../../ss_board/hpl/core" -I"../../ss_board/hpl/dmac" -I"../../ss_board/hpl/dsu" -I"../../ss_board/hpl/gclk" -I"../../ss_board/hpl/pac" -I"../../ss_board/hpl/pm" -I"../../ss_board/hpl/sercom" -I"../../ss_board/hpl/port" -I"../../ss_board/hpl/sysctrl" -I"../../ss_board/hpl/wdt" -I"../../ss_board/hri" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.304\samd21a\include"  -O1 -ffunction-sections -fno-rtti -fno-exceptions -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -std=c++0x -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
@@ -133,7 +132,7 @@ all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
 $(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP) $(LINKER_SCRIPT_DEP)
 	@echo Building target: $@
 	@echo Invoking: ARM/GNU Linker : 6.3.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -mthumb -Wl,-Map="ss_board_app.map" -Wl,--start-group -lm -lss_board  -Wl,--end-group -L"..\\Device_Startup" -L"C:\Users\Rafael Dias\Documents\Atmel Studio\7.0\ss_board\ss_board\Debug"  -Wl,--gc-sections -mcpu=cortex-m0plus -Tsamd21g18a_flash.ld -Wl,--section-start=.text=0x2000  
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -mthumb -Wl,-Map="ss_board_app.map" -Wl,--start-group -lm -lss_board  -Wl,--end-group -L"..\\Device_Startup" -L"../../ss_board/Debug"  -Wl,--gc-sections -mcpu=cortex-m0plus -Tsamd21g18a_flash.ld -Wl,--section-start=.text=0x2000  
 	@echo Finished building target: $@
 	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -O binary "ss_board_app.elf" "ss_board_app.bin"
 	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature  "ss_board_app.elf" "ss_board_app.hex"

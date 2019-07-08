@@ -684,4 +684,24 @@ pads:
     mode: I2C
     user_label: PA09
     configuration: null
+  BOOT_TXD:
+    name: PA24
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21G18A-AF::pad::PA24
+    mode: Advanced
+    user_label: BOOT_TXD
+    configuration:
+      pad_direction: Out
+      pad_function: C
+      pad_initial_level: Low
+      pad_pull_config: 'Off'
+  BOOT_RXD:
+    name: PA25
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21G18A-AF::pad::PA25
+    mode: Advanced
+    user_label: BOOT_RXD
+    configuration:
+      pad_direction: In
+      pad_function: C
+      pad_initial_level: Low
+      pad_pull_config: 'Off'
 toolchain_options: []

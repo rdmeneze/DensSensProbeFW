@@ -163,6 +163,88 @@ void system_init(void)
 {
 	init_mcu();
 
+	// GPIO on PA24
+
+	gpio_set_pin_direction(BOOT_TXD,
+	                       // <y> Pin direction
+	                       // <id> pad_direction
+	                       // <GPIO_DIRECTION_OFF"> Off
+	                       // <GPIO_DIRECTION_IN"> In
+	                       // <GPIO_DIRECTION_OUT"> Out
+	                       GPIO_DIRECTION_OUT);
+
+	gpio_set_pin_level(BOOT_TXD,
+	                   // <y> Initial level
+	                   // <id> pad_initial_level
+	                   // <false"> Low
+	                   // <true"> High
+	                   false);
+
+	gpio_set_pin_pull_mode(BOOT_TXD,
+	                       // <y> Pull configuration
+	                       // <id> pad_pull_config
+	                       // <GPIO_PULL_OFF"> Off
+	                       // <GPIO_PULL_UP"> Pull-up
+	                       // <GPIO_PULL_DOWN"> Pull-down
+	                       GPIO_PULL_OFF);
+
+	gpio_set_pin_function(BOOT_TXD,
+	                      // <y> Pin function
+	                      // <id> pad_function
+	                      // <i> Auto : use driver pinmux if signal is imported by driver, else turn off function
+	                      // <GPIO_PIN_FUNCTION_OFF"> Auto
+	                      // <GPIO_PIN_FUNCTION_OFF"> Off
+	                      // <GPIO_PIN_FUNCTION_A"> A
+	                      // <GPIO_PIN_FUNCTION_B"> B
+	                      // <GPIO_PIN_FUNCTION_C"> C
+	                      // <GPIO_PIN_FUNCTION_D"> D
+	                      // <GPIO_PIN_FUNCTION_E"> E
+	                      // <GPIO_PIN_FUNCTION_F"> F
+	                      // <GPIO_PIN_FUNCTION_G"> G
+	                      // <GPIO_PIN_FUNCTION_H"> H
+	                      GPIO_PIN_FUNCTION_C);
+
+	// GPIO on PA25
+
+	gpio_set_pin_direction(BOOT_RXD,
+	                       // <y> Pin direction
+	                       // <id> pad_direction
+	                       // <GPIO_DIRECTION_OFF"> Off
+	                       // <GPIO_DIRECTION_IN"> In
+	                       // <GPIO_DIRECTION_OUT"> Out
+	                       GPIO_DIRECTION_IN);
+
+	gpio_set_pin_level(BOOT_RXD,
+	                   // <y> Initial level
+	                   // <id> pad_initial_level
+	                   // <false"> Low
+	                   // <true"> High
+	                   false);
+
+	gpio_set_pin_pull_mode(BOOT_RXD,
+	                       // <y> Pull configuration
+	                       // <id> pad_pull_config
+	                       // <GPIO_PULL_OFF"> Off
+	                       // <GPIO_PULL_UP"> Pull-up
+	                       // <GPIO_PULL_DOWN"> Pull-down
+	                       GPIO_PULL_OFF);
+
+	gpio_set_pin_function(BOOT_RXD,
+	                      // <y> Pin function
+	                      // <id> pad_function
+	                      // <i> Auto : use driver pinmux if signal is imported by driver, else turn off function
+	                      // <GPIO_PIN_FUNCTION_OFF"> Auto
+	                      // <GPIO_PIN_FUNCTION_OFF"> Off
+	                      // <GPIO_PIN_FUNCTION_A"> A
+	                      // <GPIO_PIN_FUNCTION_B"> B
+	                      // <GPIO_PIN_FUNCTION_C"> C
+	                      // <GPIO_PIN_FUNCTION_D"> D
+	                      // <GPIO_PIN_FUNCTION_E"> E
+	                      // <GPIO_PIN_FUNCTION_F"> F
+	                      // <GPIO_PIN_FUNCTION_G"> G
+	                      // <GPIO_PIN_FUNCTION_H"> H
+	                      GPIO_PIN_FUNCTION_C);
+
 	CRC_0_init();
 
 	SPI_0_init();

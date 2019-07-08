@@ -4,3 +4,7 @@
 *.srec
 *.hex
 *.lss
+
+*.d
+*.o
+*.a
