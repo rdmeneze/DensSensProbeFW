@@ -13,11 +13,15 @@
 
 int main(void)
 {
-    /* Initialize the SAM system */
-    //SystemInit();
-	
+    /* Initialize the SAM system */	
 	atmel_start_init();
-
+	
+	gpio_set_pin_level( USER_LED, true );
+	
+	for (uint32_t i= 0; i < 0xefffffff; i++) ;
+	
+	gpio_set_pin_level( USER_LED, false );
+	
     /* Replace with your application code */
     while (1) 
     {
