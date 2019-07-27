@@ -146,8 +146,8 @@
   </armgcccpp.linker.libraries.Libraries>
   <armgcccpp.linker.libraries.LibrarySearchPaths>
     <ListValues>
+      <Value>..\..\libss_board\Release</Value>
       <Value>%24(ProjectDir)\Device_Startup</Value>
-      <Value>../../libss_board/Release</Value>
     </ListValues>
   </armgcccpp.linker.libraries.LibrarySearchPaths>
   <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
@@ -247,8 +247,8 @@
   </armgcccpp.linker.libraries.Libraries>
   <armgcccpp.linker.libraries.LibrarySearchPaths>
     <ListValues>
+      <Value>..\..\libss_board\Debug</Value>
       <Value>%24(ProjectDir)\Device_Startup</Value>
-      <Value>../../libss_board/Debug</Value>
     </ListValues>
   </armgcccpp.linker.libraries.LibrarySearchPaths>
   <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
